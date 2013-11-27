@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEIBiblio", "IDEIBiblio\IDEIBiblio.csproj", "{095E7157-898E-4B69-85BC-6A942ABEAA80}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "MvcApplication1\Website.csproj", "{B53349C2-31A5-4BB0-BC4D-83CA4EB73E78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEIBiblio", "IDEIBiblio\IDEIBiblio.csproj", "{1C66796E-6EF9-47EB-AF92-3F6DC0456FF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{095E7157-898E-4B69-85BC-6A942ABEAA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{095E7157-898E-4B69-85BC-6A942ABEAA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{095E7157-898E-4B69-85BC-6A942ABEAA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{095E7157-898E-4B69-85BC-6A942ABEAA80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B53349C2-31A5-4BB0-BC4D-83CA4EB73E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B53349C2-31A5-4BB0-BC4D-83CA4EB73E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B53349C2-31A5-4BB0-BC4D-83CA4EB73E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B53349C2-31A5-4BB0-BC4D-83CA4EB73E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C66796E-6EF9-47EB-AF92-3F6DC0456FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C66796E-6EF9-47EB-AF92-3F6DC0456FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C66796E-6EF9-47EB-AF92-3F6DC0456FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C66796E-6EF9-47EB-AF92-3F6DC0456FF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
