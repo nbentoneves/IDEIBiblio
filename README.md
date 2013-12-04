@@ -1,4 +1,4 @@
-mvc4MusicStore
+IDEIBiblio
 ==============
 
-.net MVC4 Music Store
+Projecto desenvolvido no ambito da disciplina de ARQSI
