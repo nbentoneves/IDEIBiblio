@@ -14,8 +14,6 @@ namespace IDEIBiblio.Models
         [Key]
         public int ProdutoID { get; set; }
 
-        public int TipoProdutoID { get; set; }
-
         [Display(Name = "Descrição")]
         public string Descricao { get; set; }
         [Display(Name = "Preço")]

@@ -17,6 +17,7 @@ namespace IDEIBiblio.DAL
         //Caso não tivesse sequencia de ligação seria o nome da class
         public IDEIBiblioEntities() : base("IDEIBiblio") { }
 
+        public DbSet<CDs> CDs { get; set; }
         public DbSet<Livro> Livros { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<TipoProduto> TiposProdutos { get; set; }

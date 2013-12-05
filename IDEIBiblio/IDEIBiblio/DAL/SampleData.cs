@@ -12,15 +12,13 @@ namespace IDEIBiblio.DAL
         protected override void Seed(IDEIBiblioEntities context)
         {
 
-            
             var tipos = new List<TipoProduto>
             {
                 new TipoProduto{ Tipo = "Livro"},
-                new TipoProduto{ Tipo = "Cds"}
+                new TipoProduto{ Tipo = "CDs"}
             };
 
             tipos.ForEach(tipo => context.TiposProdutos.Add(tipo));
-
             context.SaveChanges();
 
             var livros = new List<Livro>
@@ -30,15 +28,17 @@ namespace IDEIBiblio.DAL
                 new Livro{ Titulo = "Livro3", Descricao = "Sem Descrição", Escritor="Escritor3", Quantidade=400, Preco = 20.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
             };
 
-            livros.ForEach(livro => context.Produtos.Add(livro));
+            livros.ForEach(livro => context.Livros.Add(livro));
+            context.SaveChanges();
 
             var cds = new List<CDs>
             {
-                new CDs{ Artista="Artista1", Titulo="Titulo1" },
-                new CDs{ Artista="Artista2", Titulo="Titulo2" },
-                new CDs{ Artista="Artista3", Titulo="Titulo3" }
+                new CDs{ Artista="Artista1", Titulo="Titulo1", TipoProduto = tipos.Single(tipo => tipo.Tipo == "CDs") },
+                new CDs{ Artista="Artista2", Titulo="Titulo2", TipoProduto = tipos.Single(tipo => tipo.Tipo == "CDs") },
+                new CDs{ Artista="Artista3", Titulo="Titulo3", TipoProduto = tipos.Single(tipo => tipo.Tipo == "CDs") }
             };
 
+            cds.ForEach(cd => context.CDs.Add(cd));
             context.SaveChanges();
            
         }

@@ -11,12 +11,12 @@ namespace IDEIBiblio.Models
     public class TipoProduto
     {
 
-        [Key]
+        [Column("TipoProdutoID")]
         public int TipoProdutoID { get; set; }
         
         public string Tipo { get; set; }
 
-        public virtual ICollection<Produto> Livros { get; set; }
+        public virtual ICollection<Produto> Produtos { get; set; }
 
     }
 }
