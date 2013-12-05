@@ -196,6 +196,11 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201312051419245_InitialCreate.cs" />
+    <Compile Include="Migrations\201312051419245_InitialCreate.Designer.cs">
+      <DependentUpon>201312051419245_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="DAL\IDEIBiblioEntities.cs" />
     <Compile Include="Models\CDs.cs" />
@@ -324,6 +329,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201312051419245_InitialCreate.resx">
+      <DependentUpon>201312051419245_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
