@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEIBiblio", "IDEIBiblio\IDEIBiblio.csproj", "{A7AC7DCA-A466-4572-989C-389701BEA276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7AC7DCA-A466-4572-989C-389701BEA276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AC7DCA-A466-4572-989C-389701BEA276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AC7DCA-A466-4572-989C-389701BEA276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AC7DCA-A466-4572-989C-389701BEA276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
