@@ -25,12 +25,19 @@ namespace IDEIBiblio.DAL
 
             var livros = new List<Livro>
             {
-                new Livro{ Nome = "Tony Carreira", Preco = 23.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
-                new Livro{ Nome = "Jason Mraz", Preco = 15.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
-                new Livro{ Nome = "A Ilha das trevas", Preco = 15.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") }
+                new Livro{ Titulo = "Livro1", Descricao = "Sem Descrição", Escritor="Escritor1", Quantidade=100, Preco = 23.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
+                new Livro{ Titulo = "Livro2", Descricao = "Sem Descrição", Escritor="Escritor2", Quantidade=300, Preco = 40.0f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
+                new Livro{ Titulo = "Livro3", Descricao = "Sem Descrição", Escritor="Escritor3", Quantidade=400, Preco = 20.50f, TipoProduto = tipos.Single(tipo => tipo.Tipo == "Livro") },
             };
 
-            livros.ForEach(livro => context.Livros.Add(livro));
+            livros.ForEach(livro => context.Produtos.Add(livro));
+
+            var cds = new List<CDs>
+            {
+                new CDs{ Artista="Artista1", Titulo="Titulo1" },
+                new CDs{ Artista="Artista2", Titulo="Titulo2" },
+                new CDs{ Artista="Artista3", Titulo="Titulo3" }
+            };
 
             context.SaveChanges();
            

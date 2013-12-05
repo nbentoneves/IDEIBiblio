@@ -14,14 +14,17 @@ namespace IDEIBiblio.Models
         [Key]
         public int ProdutoID { get; set; }
 
-        [Key]
-        [ForeignKey("TipoProduto")]
-        public int TipoID { get; set; }
+        public int TipoProdutoID { get; set; }
+
+        [Display(Name = "Descrição")]
         public string Descricao { get; set; }
+        [Display(Name = "Preço")]
         public float Preco { get; set; }
+        [Display(Name = "Quantidade")]
         public int Quantidade { get; set; }
 
-        public TipoProduto Tipo { get; set; }
+        [Display(Name = "Tipo Produto")]
+        public virtual TipoProduto TipoProduto { get; set; }
 
     }
 }

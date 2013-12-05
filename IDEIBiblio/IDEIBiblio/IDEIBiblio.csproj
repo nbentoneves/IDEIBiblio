@@ -190,6 +190,7 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="DAL\IDEIBiblioEntities.cs" />
+    <Compile Include="Models\CDs.cs" />
     <Compile Include="Models\Livro.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="DAL\SampleData.cs" />

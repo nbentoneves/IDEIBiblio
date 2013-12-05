@@ -4,7 +4,7 @@
     ViewBag.Title = "Livros";
 }
 
-<h2>@ViewBag.Message</h2>
+<h2>Livros</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,10 +12,10 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Nome)
+            @Html.DisplayNameFor(model => model.Titulo)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Artista)
+            @Html.DisplayNameFor(model => model.Escritor)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Descricao)
@@ -24,17 +24,18 @@
             @Html.DisplayNameFor(model => model.Preco)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TipoProduto)
+            @Html.DisplayNameFor(model => model.Quantidade)
         </th>
+        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Nome)
+            @Html.DisplayFor(modelItem => item.Titulo)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Artista)
+            @Html.DisplayFor(modelItem => item.Escritor)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Descricao)
@@ -43,12 +44,12 @@
             @Html.DisplayFor(modelItem => item.Preco)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TipoProduto.Tipo)
+            @Html.DisplayFor(modelItem => item.Quantidade)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProdutoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProdutoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProdutoID })
         </td>
     </tr>
 }

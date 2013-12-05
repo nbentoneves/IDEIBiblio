@@ -7,23 +7,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IDEIBiblio.Models
 {
-    public class Livro
+    public class Livro : Produto
     {
-
-        [Key]
-        public int LivroID { get; set; }
-
-        public int TipoProdutoID { get; set; }
-
-        public string Nome { get; set; }
-        public string Artista { get; set; }
-        public string Descricao { get; set; }
-        public float Preco { get; set; }
-
-        //Propriedade de navegação (virtual)
-        [Display(Name = "Tipo Produto")]
-        public virtual TipoProduto TipoProduto { get; set; }
         
+        public string Titulo { get; set; }
+        public string Escritor { get; set; }
 
     }
 }

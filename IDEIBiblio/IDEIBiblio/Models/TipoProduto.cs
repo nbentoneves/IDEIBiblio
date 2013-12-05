@@ -16,7 +16,7 @@ namespace IDEIBiblio.Models
         
         public string Tipo { get; set; }
 
-        public virtual ICollection<Livro> Livros { get; set; }
+        public virtual ICollection<Produto> Livros { get; set; }
 
     }
 }

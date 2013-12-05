@@ -18,11 +18,14 @@ namespace IDEIBiblio.DAL
         public IDEIBiblioEntities() : base("IDEIBiblio") { }
 
         public DbSet<Livro> Livros { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
         public DbSet<TipoProduto> TiposProdutos { get; set; }
 
-        //Retirar o plural das tabelas
+        //EFs fluent API
+        //http://msdn.microsoft.com/en-us/data/jj591617
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Retirar o plural das tabelas
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
