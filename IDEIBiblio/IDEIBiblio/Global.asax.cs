@@ -20,6 +20,7 @@ namespace IDEIBiblio
         {
             AreaRegistration.RegisterAllAreas();
 
+            //Executar a class da base de dados a primeira vez por código
             //System.Data.Entity.Database.SetInitializer(new IDEIBiblio.Models.SampleData());
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
